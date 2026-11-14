@@ -1,16 +1,73 @@
-# React + Vite
+# Random Repo Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for discovering random GitHub repositories.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Scripts](#available-scripts)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Search for random repositories.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine.
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/random-repo-finder.git
+cd random-repo-finder
+```
+
+### Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+## Usage
+
+### Development Server
+
+Runs the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+The page will reload if you make edits. You will also see any lint errors in the console.
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### Build
+
+Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+### Lint
+
+Lints the project files.
+
+```bash
+npm run lint
+# or
+yarn lint
+```

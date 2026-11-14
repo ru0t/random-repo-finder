@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function DropDown() {
+function DropDown({ selectedLang, setSelectedLang }) {
   const [languages, setLanguages] = useState([]);
   useEffect(() => {
     const fetchLanguages = async () => {
@@ -21,6 +21,8 @@ function DropDown() {
       <select
         name="languages"
         id="languages"
+        value={selectedLang}
+        onChange={(e) => setSelectedLang(e.target.value)}
         style={{
           width: "100%",
           padding: "10px",
@@ -28,6 +30,10 @@ function DropDown() {
           borderRadius: "10px",
         }}
       >
+        <option value="" disabled>
+          Select a language
+        </option>
+
         {languages.map((lang, key) => (
           <option value={lang.name} key={key}>
             {lang.name}
